@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <!-- this is a style css file -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+</head>
+<body>
+    <!-- this is heading  -->
+    <h1 id="title"><i class="fas fa-tasks"></i>&nbsp; To-Do List</h1>
+
+    <!-- this is form where we fill tasks-->
+    <form>
+        <input type="text" id="input" placeholder="Enter Your Task..">
+        <button id="btn" type="submit">Add Task</button>
+    </form>
+
+    <!-- In this we have our all tasks/completed/incompleted/ -->
+    <div id="filter">
+        <a href="#" class="filter" id="all">All Tasks(<span id="allcount"></span>)</a>
+        <a href="#" class="filter" id="completed">Completed Tasks(<span id="complete"></span>)</a>
+        <a href="#" class="filter" id="incomplete">Incomplete Tasks(<span id="incompletecount"></span>)</a>
+    </div>
+    <!-- In this we have our list items -->
+    <ul id="list"></ul>
+
+
+    <!-- In this we have our Completeall/deleteall tags -->
+    <div id="filter">
+        <a href="#" class="filter" id="completeall"><i class="fas fa-check-double"></i>Complete All</a>
+        <a href="#" class="filter" id="deleteall">Clear Completed</a>
+    </div>
+
+<!-- this is my footer -->
+    <footer>
+        Developed By <a href="https://jamshed.in">Jamshed Khan</a>
+    </footer>
+
+    <!-- this is script tag -->
+    <script src="../Script/script.js"></script>
+</body>
+
+</html>
